@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mónica Riofrío de Gallo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png" type="image/png"> 
+</head>
+
+<body>
+    <header>
+        <div class="menu-bar">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <nav id="navMenu">
+                <a href="#acuarelas" onclick="showCategory('acuarelas', 'Acuarelas')">Acuarelas</a>
+                <a href="#fluidos" onclick="showCategory('fluidos', 'Fluidos')">Fluidos</a>
+                <a href="#acrilicos" onclick="showCategory('acrilicos', 'Acrílicos')">Acrílicos</a>
+            </nav>
+            <a href="http://Wa.me/51936892589" class="contact-link" target="_blank">Contacto</a>
+        </div>
+    </header>
+
+    <section class="hero" id="hero" style="background-image: url('portada.JPG');">
+        <h1 id="main-title">Mónica Riofrío de Gallo</h1>
+    </section>
+
+    <section class="categories" id="main-categories">
+        <button onclick="showCategory('acuarelas', 'Acuarelas')">Acuarela</button>
+        <button onclick="showCategory('fluidos', 'Fluidos')">Fluidos</button>
+        <button onclick="showCategory('acrilicos', 'Acrílicos')">Acrílicos</button>
+    </section>
+
+    <!-- Sección Acuarelas -->
+    <section id="acuarelas" class="gallery" style="display: none;">
+        <div class="subcategories">
+            <button onclick="showSubcategory('Acuarelas Florales', 'acuarelas-florales')">Florales</button>
+            <button onclick="showSubcategory('Acuarelas Piuranas', 'acuarelas-piuranas')">Piuranos</button>
+            <button onclick="showSubcategory('Acuarelas Abstractas', 'acuarelas-abstractas')">Abstracto</button>
+        </div>
+    </section>
+
+    <section id="acuarelas-florales" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('acuarelas', 'Acuarelas')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Acuarelas Florales</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/acuarelas_florales1.JPG" alt="Acuarela Floral 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_florales2.JPG" alt="Acuarela Floral 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_florales3.JPG" alt="Acuarela Floral 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_florales4.JPG" alt="Acuarela Floral 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_florales5.JPG" alt="Acuarela Floral 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="acuarelas-piuranas" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('acuarelas', 'Acuarelas')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Acuarelas Piuranas</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/acuarelas_piuranas1.JPG" alt="Acuarela Piurana 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_piuranas2.JPG" alt="Acuarela Piurana 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_piuranas3.JPG" alt="Acuarela Piurana 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_piuranas4.JPG" alt="Acuarela Piurana 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_piuranas5.JPG" alt="Acuarela Piurana 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="acuarelas-abstractas" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('acuarelas', 'Acuarelas')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Acuarelas Abstractas</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/acuarelas_abstractas1.JPG" alt="Acuarela Abstracta 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_abstractas2.JPG" alt="Acuarela Abstracta 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_abstractas3.JPG" alt="Acuarela Abstracta 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_abstractas4.JPG" alt="Acuarela Abstracta 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acuarelas_abstractas5.JPG" alt="Acuarela Abstracta 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Fluidos -->
+    <section id="fluidos" class="gallery" style="display: none;">
+        <div class="subcategories">
+            <button onclick="showSubcategory('Fluidos Marinos', 'fluidos-marinos')">Marinos</button>
+            <button onclick="showSubcategory('Fluidos Abstractos', 'fluidos-abstractos')">Abstractos</button>
+        </div>
+    </section>
+
+    <section id="fluidos-marinos" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('fluidos', 'Fluidos')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Fluidos Marinos</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/fluidos_marinos1.JPG" alt="Fluido Marino 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_marinos2.JPG" alt="Fluido Marino 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_marinos3.JPG" alt="Fluido Marino 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_marinos4.JPG" alt="Fluido Marino 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_marinos5.JPG" alt="Fluido Marino 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fluidos-abstractos" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('fluidos', 'Fluidos')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Fluidos Abstractos</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/fluidos_abstractos1.JPG" alt="Fluido Abstracto 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_abstractos2.JPG" alt="Fluido Abstracto 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_abstractos3.JPG" alt="Fluido Abstracto 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_abstractos4.JPG" alt="Fluido Abstracto 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/fluidos_abstractos5.JPG" alt="Fluido Abstracto 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acrílicos -->
+    <section id="acrilicos" class="gallery" style="display: none;">
+        <div class="subcategories">
+            <button onclick="showSubcategory('Acrílicos Modernos', 'acrilicos-modernos')">Modernos</button>
+            <button onclick="showSubcategory('Acrílicos Clásicos', 'acrilicos-clasicos')">Clásicos</button>
+        </div>
+    </section>
+
+    <section id="acrilicos-modernos" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('acrilicos', 'Acrílicos')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Acrílicos Modernos</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/acrilicos_modernos1.JPG" alt="Acrílico Moderno 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_modernos2.JPG" alt="Acrílico Moderno 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_modernos3.JPG" alt="Acrílico Moderno 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_modernos4.JPG" alt="Acrílico Moderno 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_modernos5.JPG" alt="Acrílico Moderno 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="acrilicos-clasicos" class="gallery" style="display: none;">
+        <button onclick="goBackToCategory('acrilicos', 'Acrílicos')" class="back-button">Volver</button>
+        <h2 id="subcategory-title">Acrílicos Clásicos</h2>
+        <div class="paintings">
+            <div class="painting">
+                <img src="img/acrilicos_clasicos1.JPG" alt="Acrílico Clásico 1">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_clasicos2.JPG" alt="Acrílico Clásico 2">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_clasicos3.JPG" alt="Acrílico Clásico 3">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_clasicos4.JPG" alt="Acrílico Clásico 4">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+            <div class="painting">
+                <img src="img/acrilicos_clasicos5.JPG" alt="Acrílico Clásico 5">
+                <p>(Dimensiones)</p>
+                <p>(Nombre del cuadro)</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

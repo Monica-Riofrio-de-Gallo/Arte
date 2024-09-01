@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Jacques Francois Shadow', serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555;
+    padding: 20px 30px;
+    color: white;
+    border-radius: 30px;
+    margin: 10px auto;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#navMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#navMenu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-link {
+    background-color: #666;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #666;
+    z-index: 1;
+    position: relative;
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.categories, .subcategories {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.categories button, .subcategories button {
+    background-color: #777;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.gallery {
+    padding: 20px;
+    display: none;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.paintings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.painting {
+    margin: 10px;
+    text-align: center;
+}
+
+.painting img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
